@@ -18,7 +18,7 @@ public class NetbankServlet extends HttpServlet{
 			ResultSet rs=stmt.executeQuery("select * from bank where name='"
 				+bname+"' and cardno='"+cardno+"'");
 			if(rs.next()){
-				out.println("Happy Shopping!!!");
+				out.println("Happy Shopping!!! thanks");
 				res.setHeader("Refresh","4;welcome.html");
 			}else{
 				out.println("Invalid bankname or password");
